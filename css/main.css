@@ -1,1 +1,21 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+.footer {
+  background-color: black;
+  padding: 20px;
+}
+
+.footer__copyright {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+/*Página: contacto*/
+.contacto__button {
+  border-radius: 20px;
+  padding: 7px 20px;
+  letter-spacing: 1px;
+  background-color: #ff5d2a;
+  border: solid 1px #ff5d2a;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

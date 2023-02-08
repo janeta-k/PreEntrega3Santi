@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Tentación</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+
+  <header class="header">
+    <nav class="navbar bg-black navbar-expand-lg navbar-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/log01.svg" alt="Bootstrap" width="200px" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- BANNER -->
+
+  <main class="banner">
+    <div class="container">
+      <div class="row banner__padding">
+        <div class="col-lg-6 banner__text-center">
+          <h1 class="banner__title">¡Llegó San Valentín!</h1>
+          <p class="banner__subtitle">
+            El amor ya huele a chocolate! Revisa nuestra colección.
+          </p>
+          <button type="button" class="btn banner__button">Comprar</button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img class="banner__img" src="./img/chocolates-banner.png" alt="caja de bombones">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SECCIÓN PRODUCTOS DESTACADOS -->
+
+  <section class="destacados">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="destacados__title mt-5 mb-4">Nuestros destacados del mes</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="card product__card-margin">
+            <img class="card-img-top" src="./img/bombones-caja.jpg" alt="bombones-caja">
+            <div class="card-body">
+              <h6 class="card-title">Bombones caja 420g</h6>
+              <p class="card-text mb-2">$22.600</p>
+              <a href="#" class="btn product__button">agregar al carro</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="card product__card-margin">
+            <img class="card-img-top" src="./img/bombones-lata.jpg" alt="bombones-lata">
+            <div class="card-body">
+              <h6 class="card-title">Bombones lata 670g</h6>
+              <p class="card-text mb-2">$33.900</p>
+              <a href="#" class="btn product__button">agregar al carro</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="card product__card-margin">
+            <img class="card-img-top" src="./img/calugas-lata.jpg" alt="calugas-lata">
+            <div class="card-body">
+              <h6 class="card-title">Calugas lata 250g</h6>
+              <p class="card-text mb-2">$8.500</p>
+              <a href="#" class="btn product__button">agregar al carro</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12 col-md-6">
+          <div class="card product__card-margin">
+            <img class="card-img-top" src="./img/rouge-mix.jpg" alt="rouge-mix">
+            <div class="card-body">
+              <h6 class="card-title">Rouge Mix 540g</h6>
+              <p class="card-text mb-2">$29.800</p>
+              <a href="#" class="btn product__button">agregar al carro</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12 mt-4 mb-5">
+          <a class="btn button__ver-mas" role="button" aria-disabled="true">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECCIÓN DE EL BLOG -->
+
+  <section class="blog">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h2 class="blog__title">Blog</h2>
+          <p class="blog__subtitle">
+            Te invitamos a ser parte de la experiencia Dulce Tentación
+          </p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="col-lg-4 col-md-6">
+          <div class="card blog__card-container post">
+            <img class="" src="./img/torta-chocolate.PNG" alt="Torta de chocolate">
+            <div class="card-body">
+              <p class="post__category">Recetas</p>
+              <p class="post__title">Torta de chocolate y café</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 hidden-mobile col-md-6">
+          <div class="card blog__card-container post">
+            <img class="" src="./img/pie.PNG" alt="Pie de limón">
+            <div class="card-body">
+              <p class="post__category">Recetas</p>
+              <p class="post__title">Pie de limón</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 hidden-tablet-mobile">
+          <div class="card blog__card-container post">
+            <img class="" src="./img/cheesecake.PNG" alt="Cheesecake">
+            <div class="card-body">
+              <p class="post__category">Recetas</p>
+              <p class="post__title">Cheescake</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mb-5">
+          <a class="btn button__ver-blog" role="button" aria-disabled="true">Ver Blog</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECCIÓN DE EMPRESAS -->
+
+  <section class="empresas">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="empresas__title">¿Eres una empresa?</h2>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 col-sm-12">
+          <div class="empresas__description-container">
+            <div class="empresas__description-p">
+              <p class="description">
+                Somos una empresa líder en chocolates promocionales donde podemos
+                satisfacer las más amplias necesidades de nuestros clientes,
+                cerrando el círculo publicitario y de promoción.
+              </p>
+              <p class="description">
+                Si lo requieres, estaremos abiertos a conocer tus necesidades y
+                proponer ideas de acuerdo a cada objetivo comercial, si ya tienes
+                algo en mente te ayudaremos a materializarlo para darle vida a un
+                exitoso resultado.
+              </p>
+            </div>
+
+            <ul class="empresas__description-ul hidden-tablet-mobile">
+              <li class="empresas__list">Genéricos con saludo</li>
+              <li class="empresas__list">Productos a elección</li>
+              <li class="empresas__list">Empaque personalizado</li>
+              <li class="empresas__list">Y mucho más!</li>
+            </ul>
+
+            <a href="#" class="btn empresas__button hidden-tablet-mobile">Quiero Cotizar</a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <img class="empresas__img" src="./img/regalos-personalizados.PNG" alt="regalos personalizados" />
+        </div>
+      </div>
+
+      <div class="col-sm-12 show-tablet-mobile text-center mb-5 ">
+        <a href="#" class="btn empresas__button">Quiero Cotizar</a>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="footer__copyright">
+            Copyright © 2023 - Página creada por Janet Santi - Todos los derechos
+            reservados
+          </h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

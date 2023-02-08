@@ -1,0 +1,24 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato&display=swap');
+@import 
+    'sass/abstracts/mixins', 
+    'sass/abstracts/variables';
+
+@import 
+    'sass/base/tipography';
+    
+@import 
+    'sass/layout/header', 
+    'sass/layout/navbar',
+    'sass/layout/footer', 
+    'sass/layout/forms';
+
+@import 
+    'sass/components/buttons';
+
+@import 
+    'sass/pages/index', 
+    'sass/pages/productos', 
+    'sass/pages/blog', 
+    'sass/pages/nosotros', 
+    'sass/pages/contacto';
