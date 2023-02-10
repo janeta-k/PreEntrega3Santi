@@ -1,0 +1,38 @@
+h4{
+    margin-bottom: 0rem;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.show-tablet-mobile{
+    display: none;
+}
+
+/*tablet*/
+@media (max-width: 576px){
+    .hidden-tablet-mobile{
+        display: none;
+    }
+    .hidden-mobile{
+        display: none;
+    }
+    .show-tablet-mobile{
+        display: block;
+    }
+}
+
+/*mobile*/
+@media (max-width: 950px){
+    .hidden-tablet-mobile{
+        display: none;
+    }
+    .show-tablet-mobile{
+        display: block;
+    }
+}

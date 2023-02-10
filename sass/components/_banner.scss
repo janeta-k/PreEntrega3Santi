@@ -1,0 +1,30 @@
+.banner{
+    background-color: #f4eeee;
+}
+
+.banner__padding{
+    padding: 3rem;
+}
+
+.banner__title {
+    font-size: 4rem;
+}
+
+.banner__subtitle {
+    font-size: 1.25rem;
+    line-height: 30px;
+    margin: 10px 0px;
+    font-family:sans-serif;
+}
+
+.banner__button {
+    background-color: #d9ae5c;
+    border: solid 1px #d9ae5c;
+    color: white;
+}
+
+.banner__button:hover{
+    background-color: #ff5d2a;
+    border: solid 1px #ff5d2a;
+    color: white;
+}
