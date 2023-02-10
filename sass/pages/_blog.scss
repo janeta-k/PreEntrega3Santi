@@ -1,0 +1,18 @@
+
+.post__img {
+    height: 255px;
+    object-fit: cover;
+}
+
+.post__creditos {
+    font-family: var(--barlow);
+}
+
+@media (max-width: 576px){
+    .blog-margin{
+        margin-top: 0px;
+    }
+    .post__img {
+        height: 170px;
+    }
+}
