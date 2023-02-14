@@ -1,0 +1,8 @@
+.button__ver-mas {
+   @include ver-mas-button; 
+
+    &:hover {
+        background-color: $dark-grey;
+        color: $white;
+    }
+}

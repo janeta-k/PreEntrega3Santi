@@ -1,185 +1,142 @@
 /*SECCIÓN PRODUCTOS DESTACADOS*/
 .destacados__title {
-    color: #503629;
-    font-family: sans-serif;
+    font: {
+        family: sans-serif;
+        size: $font-size * 2.2;
+        weight: 600;
+    }
+
     text-align: center;
-    font-size: 2.2rem;
-    font-weight: 600;
+    color: $title;
 }
 
 .product__button {
-    font-weight: 600;
+    @include golden-button;
+
+    font: {
+        weight: 600;
+        size: $font-size;
+        family: sans-serif;
+    }
+
     text-transform: inherit;
-    border: 1px solid #d9ae5c;
-    background-color: #d9ae5c;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 1em;
+    letter-spacing: $letter-spacing;
     margin: 0;
     border-radius: 4px;
     width: 100%;
-    font-family: sans-serif;
-}
-
-.button__ver-mas {
-    
-    letter-spacing: 3px;
-    font-size: .933rem;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-color: #313234;
-    padding: 0.767rem 1.557rem;
-    margin-top: 20px;
-}
-
-.button__ver-mas:hover {
-    background-color: #313234;
-    color: white;
 }
 
 /*Sección blog*/
 .blog {
     padding: 60px 40px;
+
+    &__title {
+        font: {
+            family: sans-serif;
+            size: $font-size*2.2;
+            weight: 600;
+        }
+
+        color: $title;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font: {
+            size: $font-size + 0.25;
+            family: $blog-font;
+            weight: 200;
+        }
+
+        margin-top: 5px;
+    }
 }
-.blog__title {
-    color: #503629;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-.blog__subtitle {
-    margin-top: 5px;
-    font-size: 20px;
-    font-family: var(--barlow);
-    font-weight: 200;
-}
+
 .post__category {
-    font-family: var(--barlow);
+    font-family: $blog-font;
     margin: 0%;
 }
 
-.button__ver-blog {
-    cursor: pointer;
-    letter-spacing: 3px;
-    font-size: .933rem;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-color: #313234;
-    padding: 0.767rem 1.557rem;
-    margin-top: 50px;
-}
-
-.button__ver-blog:hover {
-    background-color: #313234;
-    color: white;
-}
-
-.btn{
-    --bs-btn-border-radius: 0;
-}
-
 /*sección empresas*/
-.empresas__title {
-    color: #503629;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 600;
-}
+.empresas {
+    &__title {
+        font: {
+            family: sans-serif;
+            size: $font-size * 2.2;
+            weight: 600;
+        }
 
-.empresas__description-container {
-    font-family: sans-serif;
-}
-
-.empresas__description-p {
-    line-height: 1.5rem;
-}
-
-.description {
-    margin-bottom: 20px;
-}
-
-.empresas__description-ul {
-    line-height: 1.5rem;
-}
-
-.empresas__button {
-    border-radius: 20px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    background-color: #ff5d2a;
-    border: solid 1px #ff5d2a;
-    color: white;
-    margin-bottom: 30px;
-}
-
-.empresas__img-container {
-    text-align: center;
-}
-
-.empresas__img {
-    width: 100%;
-}
-
-@media (max-width: 576px){
-    /*Banner*/
-    .banner__padding{
-        padding: 1rem;
-    }
-    .banner__text-center{
+        color: $title;
         text-align: center;
     }
-    .banner__title{
-        font-size: 3rem;
-        margin-top: 30px 0px 8px;
-        text-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+
+    &__description-container {
+        font-family: $paragraph;
     }
-    .banner__subtitle{
-        font-size: 20px;
-        margin-bottom: 1rem;
+
+    &__description {
+        line-height: 1.5rem;
     }
-    .banner__img{
+
+    &__description-p {
+        margin-bottom: 20px;
+    }
+
+    &__description-ul {
+        line-height: 1.5rem;
+    }
+
+    &__button {
+        @include red-button;
+        margin-bottom: 30px;
+    }
+
+    &__img-container {
+        text-align: center;
+    }
+
+    &__img {
         width: 100%;
-        height: auto;
-       padding: 75px 50px 50px;
     }
+}
+
+
+
+@media (max-width: 576px) {
+
     /*destacados del mes*/
-    .product__card-margin{
+    .product__card-margin {
         margin: 20px 30px;
     }
+
     /*blog*/
     .blog__subtitle {
-        font-size: 15px;
+        font-size: $font-size;
     }
-    .post{
+
+    .post {
         margin-top: 20px;
     }
+
     /*empresas*/
-    .empresas__description-p{
+    .empresas__description {
         text-align: justify;
     }
+
     .empresas__description-container {
         margin: 0px 15px;
     }
 }
 
-@media (max-width: 950px){
-    /*banner*/
-    .banner__text-center{
-        text-align: center;
-    }
-    .banner__img{
-        margin-top: 40px;
-    }
+@media (max-width: 950px) {
+
     /*destacados*/
-    .product__card-margin{
+    .product__card-margin {
         margin-bottom: 20px;
     }
+
     /*empresas*/
-    .empresas__description-p{
+    .empresas__description-p {
         text-align: justify;
     }
 }

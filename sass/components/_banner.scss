@@ -1,30 +1,74 @@
-.banner{
-    background-color: #f4eeee;
+.banner {
+    background-color: $banner;
+
+    &__padding {
+        padding: 3rem;
+    }
+
+    &__title {
+        font-size: $font-size + 3; 
+    }
+
+    &__subtitle {
+        font: {
+            size: $font-size + 0.25; 
+            family: $paragraph;
+        }
+
+        line-height: 30px;
+        margin: 10px 0px;
+    }
+
+    &__button {
+        @include golden-button;
+
+        &:hover {
+            background-color: $button-color-1;
+            border: solid 1px $button-color-1;
+            color: $white;
+        }
+    }
 }
 
-.banner__padding{
-    padding: 3rem;
+
+
+@media (max-width: 576px) {
+    .banner {
+        &__padding {
+            padding: 1rem;
+        }
+
+        &__text-center {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: $font-size * 3;
+            margin-top: 30px 0px 8px;
+            text-shadow: 2px 2px 2px hwb(0 0% 100% / 0.2);
+        }
+
+        &__subtitle {
+            font-size: $font-size + 0.25; 
+            margin-bottom: 1rem;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+            padding: 75px 50px 50px;
+        }
+    }
 }
 
-.banner__title {
-    font-size: 4rem;
-}
+@media (max-width: 950px) {
+    .banner {
+        &__text-center {
+            text-align: center;
+        }
 
-.banner__subtitle {
-    font-size: 1.25rem;
-    line-height: 30px;
-    margin: 10px 0px;
-    font-family:sans-serif;
-}
-
-.banner__button {
-    background-color: #d9ae5c;
-    border: solid 1px #d9ae5c;
-    color: white;
-}
-
-.banner__button:hover{
-    background-color: #ff5d2a;
-    border: solid 1px #ff5d2a;
-    color: white;
+        &__img {
+            margin-top: 40px;
+        }
+    }
 }

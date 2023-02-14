@@ -1,38 +1,45 @@
-h4{
+h4 {
     margin-bottom: 0rem;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
-.btn:hover {
-    border-color: black;
+.btn {
+    --bs-btn-border-radius: 0;
 }
 
-.show-tablet-mobile{
+.btn:hover {
+    border-color: $black;
+}
+
+.show-tablet-mobile {
     display: none;
 }
 
 /*tablet*/
-@media (max-width: 576px){
-    .hidden-tablet-mobile{
+@media (max-width: 576px) {
+    .hidden-tablet-mobile {
         display: none;
     }
-    .hidden-mobile{
+
+    .hidden-mobile {
         display: none;
     }
-    .show-tablet-mobile{
+
+    .show-tablet-mobile {
         display: block;
     }
 }
 
 /*mobile*/
-@media (max-width: 950px){
-    .hidden-tablet-mobile{
+@media (max-width: 950px) {
+    .hidden-tablet-mobile {
         display: none;
     }
-    .show-tablet-mobile{
+
+    .show-tablet-mobile {
         display: block;
     }
 }
