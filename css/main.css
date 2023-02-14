@@ -260,7 +260,7 @@ p {
   }
   /*blog*/
   .blog__subtitle {
-    font-size: 1rem;
+    font-size: 0.938rem;
   }
   .post {
     margin-top: 20px;
@@ -313,7 +313,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.post__img__creditos {
+.post__creditos {
   font-family: "Barlow", sans-serif;
 }
 
@@ -392,13 +392,13 @@ p {
   .contacto__info-container {
     text-align: center;
   }
-  .contacto__info-container__title {
+  .contacto__title {
     font-size: 1.5rem;
   }
-  .contacto__info-container__form-container {
+  .contacto__form-container {
     margin-top: 20px;
   }
-  .contacto__info-container__button {
+  .contacto__button {
     width: 100%;
   }
   form {
