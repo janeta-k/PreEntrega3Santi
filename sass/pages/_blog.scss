@@ -1,6 +1,8 @@
-.post__img {
-    height: 255px;
-    object-fit: cover;
+.post {
+    &__img {
+        height: 255px;
+        object-fit: cover;
+    }
 
     &__creditos {
         font-family: $blog-font;
