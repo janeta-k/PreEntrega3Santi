@@ -1,23 +1,24 @@
 
-// @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Courgette&family=Lato&display=swap');
-@import 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Courgette&family=Lato&display=swap');
+@import 'sass/base/tipography';
+
+@import
     'sass/abstracts/colors',
     'sass/abstracts/mixins', 
     'sass/abstracts/variables';
 
 @import 
     'sass/base/base',
-    'sass/base/reset',
-    'sass/base/tipography';
+    'sass/base/reset';
     
 @import  
     'sass/layout/navbar',
-    'sass/layout/footer', 
-    'sass/layout/forms';
+    'sass/layout/footer';
 
 @import 
     'sass/components/banner',
-    'sass/components/blog-card';
+    'sass/components/blog-card',
+    'sass/components/button';
 
 @import 
     'sass/pages/index', 

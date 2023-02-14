@@ -1,22 +1,28 @@
-.blog__card-container{
+.blog__card-container {
     --bs-card-border-radius: 0;
     margin-top: 30px;
     transition: all 400ms ease;
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+    }
 }
-.blog__card-container:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
+
 .post {
-    background-color: white;
-    box-shadow: 0 3px 8px #ddd;
+    background-color: $white;
+    box-shadow: 0 3px 8px $light;
     cursor: pointer;
     --bs-card-border-color: transparent;
     border: 0;
-}
-.post__title {
-    font-family: var(--barlow);
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin: 0%;
+
+    &__title {
+        font: {
+            family: $blog-font;
+            weight: bold;
+        }
+
+        letter-spacing: $letter-spacing+1;
+        margin: 0%;
+    }
 }

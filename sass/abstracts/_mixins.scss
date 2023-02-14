@@ -1,0 +1,25 @@
+@mixin ver-mas-button {
+    letter-spacing: $letter-spacing+2;
+    font-size: $font-size;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: $dark-grey;
+    padding: 12px 25px;
+    margin-top: 20px;
+}
+
+@mixin red-button {
+    border-radius: 20px;
+    padding: 7px 20px;
+    letter-spacing: $letter-spacing;
+    background-color: $button-color-1;
+    border: solid 1px $button-color-1;
+    color: $white;
+}
+
+@mixin golden-button {
+    border: 1px solid $button-color-2;
+    background-color: $button-color-2;
+    color: $white;
+}
